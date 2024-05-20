@@ -2,9 +2,10 @@ import { Platform } from "react-native";
 import { StyleSheet } from "react-native";
 import { Pressable, View, Text } from "react-native";
 
-const GridItem = ({ title, color, id }) => {
+const GridItem = ({ title, color, id, onPress }) => {
   const pressHandler = () => {
-    console.log("MealsOverview", { categoryId: id });
+    console.log("MeaonPresslsOverview", { categoryId: id });
+    onPress();
   };
 
   return (

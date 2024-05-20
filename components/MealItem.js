@@ -1,9 +1,14 @@
 import { View, Text, Pressable, Image, StyleSheet } from "react-native";
 import MealDetails from "./MealDetails";
 
-const MealItem = (props) => {
-  const { id, title, imageUrl, duration, complexity, affordability } = props;
-
+const MealItem = ({
+  id,
+  title,
+  imageUrl,
+  duration,
+  complexity,
+  affordability,
+}) => {
   const pressHandler = () => {
     console.log("MealDetails", { mealId: id });
   };
